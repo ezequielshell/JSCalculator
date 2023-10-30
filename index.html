@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculadora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="calculator">
+      <input
+        type="text"
+        id="screen"
+        value="0"
+        class="calculator-screen"
+        disabled
+      />
+
+      <div>
+        <button class="button number" onclick="addNumber('1')">1</button>
+      </div>
+      <div>
+        <button class="button number" onclick="addNumber('2')">2</button>
+      </div>
+      <div>
+        <button class="button number" onclick="addNumber('3')">3</button>
+      </div>
+      <div>
+        <button class="button del" onclick="deleteLast()">Del</button>
+      </div>
+
+      <div>
+        <button class="button number" onclick="addNumber('4')">4</button>
+      </div>
+      <div>
+        <button class="button number" onclick="addNumber('5')">5</button>
+      </div>
+      <div>
+        <button class="button number" onclick="addNumber('6')">6</button>
+      </div>
+      <div>
+        <button class="button button-operations" onclick="setOperation('+')">
+          +
+        </button>
+      </div>
+
+      <div>
+        <button class="button number" onclick="addNumber('7')">7</button>
+      </div>
+      <div>
+        <button class="button number" onclick="addNumber('8')">8</button>
+      </div>
+      <div>
+        <button class="button number" onclick="addNumber('9')">9</button>
+      </div>
+      <div>
+        <button class="button button-operations" onclick="setOperation('-')">
+          -
+        </button>
+      </div>
+
+      <div>
+        <button class="button number" onclick="addDecimal()">.</button>
+      </div>
+      <div>
+        <button class="button number" onclick="addNumber('0')">0</button>
+      </div>
+      <div>
+        <button class="button button-operations" onclick="setOperation('/')">
+          &divide;
+        </button>
+      </div>
+      <div>
+        <button class="button button-operations" onclick="setOperation('*')">
+          &times;
+        </button>
+      </div>
+
+      <div class="c">
+        <button class="button cOp" onclick="clearScreen()">C</button>
+      </div>
+      <div class="equal">
+        <button class="button equalOp" onclick="calculate()">=</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="commands.js"></script>
+  </body>
+</html>
